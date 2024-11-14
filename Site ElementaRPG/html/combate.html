@@ -19,7 +19,7 @@
                 <ul>
                     <li><a href="#definicao">Definição</a></li>
                     <li><a href="#">Danos</a></li> 
-                    <li><a href="#">Proteção e reação</a></li>
+                    <li><a href="#protecao-section">Proteção e reação</a></li>
                     <li><a href="#">Ações em combate</a></li>
                     <li><a href="#">Ferimentos e morte</a></li>
                     
@@ -171,7 +171,7 @@
         </section>
 
         <section class="protecao-section">
-            <h2>Proteção e reação</h2>
+            <h2 id="protecao-section">Proteção e reação</h2>
             <p>
                 A proteção de um personagem é definida pela sua AGI + 10. Já sua reação começa em 1.
             </p>
@@ -298,7 +298,6 @@
                     ataque à distância de um outro personagem em terreno elevado, sofre -2 de proteção naquele
                     ataque.
                 </li>
-            
 
                 <li><strong> Postura defensiva:</strong> você pode gastar sua ação completa para entrar em uma postura
                     defensiva, concedendo a você +2 de proteção até o início do seu próximo turno. Caso receba
@@ -346,8 +345,6 @@
                     cobertura.
                 </li>
 
-
-                
                 <li><strong>Lesão grave: </strong>um personagem em lesão grave recebe -5 de proteção por sua condição física
                     estar em péssimo estado. Essa penalidade será retirada apenas quando a lesão grave for
                     curada.
@@ -398,6 +395,7 @@
                 <li><strong>Agarrado:</strong>  um alvo que esteja agarrado recebe -2 de proteção contra ataques físicos. Um
                     personagem agarrado é considerado como “alvo em combate”.
                 </li>
+                
                 <li><strong>Desconcertado:</strong> um alvo que sofreu uma finta durante o combate, recebe -2 de proteção até
                 o início do seu próximo turno.
                 </li>
@@ -439,7 +437,20 @@
         <h1>&copy; Todos os direitos reservados.</h1>
     </footer>
     
-
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("menu");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+    </script>
 
 </body>
 </html>
