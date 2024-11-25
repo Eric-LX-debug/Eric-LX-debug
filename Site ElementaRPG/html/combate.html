@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/combate.css">
-    <title>Elementa RPG - Combate </title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Elementa RPG - Combate</title>
 </head>
-<body>  
-    <header  id="fototopo">
-        <h1>A foto fica aqui</h1>
-    </header>
+<body>
     
 
     <nav id="menu">
@@ -21,8 +18,7 @@
                     <li><a href="#">Danos</a></li> 
                     <li><a href="#protecao-section">Proteção e reação</a></li>
                     <li><a href="#">Ações em combate</a></li>
-                    <li><a href="#">Ferimentos e morte</a></li>
-                    
+                    <li><a href="#">Ferimentos e morte</a></li>  
                 </ul>
             </li>
         </ul>
@@ -84,22 +80,15 @@
                 </ul>
             </li>  
         </ul>
-
-        
-        
-        <input type="text" placeholder="Pesquisar..">
-        
-        
-        
     </nav>
 
     <section class="conteudoinformacoes">
 
         <section class="definicao-combate-section">
 
-            <h1>Sistema de combate Elementa &empty;</h1>
+            <h1 id="definicao">Sistema de combate Elementa </h1>
 
-            <p id="definicao">O sistema de combate de Elementa é projetado para ser estratégico e realista,<br />
+            <p>O sistema de combate de Elementa é projetado para ser estratégico e realista,<br />
                 destacando a importância da proteção dinâmica e das reações. Aqui está um resumo: 
             </p>
 
@@ -429,28 +418,9 @@
 
     </section>
     
-
-    
-
     
     <footer class="rodape">
         <h1>&copy; Todos os direitos reservados.</h1>
     </footer>
-    
-    <script>
-        window.onscroll = function() {myFunction()};
-        
-        var header = document.getElementById("menu");
-        var sticky = header.offsetTop;
-        
-        function myFunction() {
-          if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-          } else {
-            header.classList.remove("sticky");
-          }
-        }
-    </script>
-
 </body>
 </html>
